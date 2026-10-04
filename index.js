@@ -8,6 +8,10 @@ const PORT = 3000;
 app.get("/", (req, res) => {
     res.send("Hello! Express.js server is running.");
 });
+app.get("/data", (req, res) => {
+    res.send("Here is some data!");
+});
+
 
 // Start server
 app.listen(PORT, () => {
